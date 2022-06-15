@@ -22,6 +22,10 @@ const postSchema = new mongoose.Schema(
         default: '',
       },
     ],
+    views_count: {
+      type: Number,
+      default: 0,
+    },
     posted_by: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'user',
